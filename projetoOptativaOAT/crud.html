@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Atletas</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body onload="mostra()">
+    <div class="container">
+        <div class="header clearfix">
+            <h2 style="padding: 15px;">CRUD em JavaScript </h2>
+            <div class="jumbotron">
+                <form id="formulario">
+                    <div class="form-group">
+                        <label>Nome:</label>
+                        <input type="text" id="nome" class="form-control">
+                    </div>
+                    <div class="form-group">
+                            <label>Categoria:</label>
+                            <input type="text" id="categoria" class="form-control">
+                    </div>
+                    <div class="form-group">
+                            <label>Idade:</label>
+                            <input type="text" id="idade" class="form-control">
+                    </div>
+                    <div class="form-group">
+                            <label>Peso:</label>
+                            <input type="text" id="peso" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-success">Adicionar</button>
+                    <a href="javascript:history.go(-1)" class="btn btn-outline-dark">Voltar</a>
+                </form>
+                
+            </div>
+        </div>
+
+        <div class="row marketing">
+            <div class="col-lg-12">
+                <table class="table table-houver">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Categoria</th>
+                            <th>Idade</th>
+                            <th>Peso</th>
+                            <th>Editar</th>
+                            <th>Finalizar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultados"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
